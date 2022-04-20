@@ -1,3 +1,12 @@
+name: 'Checkstyle'
+description: 'run checkstyle'
+inputs:
+  checkstyle-rule:
+    description: 'rule'
+    default: '/checkstyle_rule.xml'
+  checkstyle-result:
+    description: 'result'
+    default: './checkstyle_result.xml'
 runs:
   using: 'docker'
   image: 'Dockerfile'
