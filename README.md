@@ -1,0 +1,2 @@
+# actions-checkstyle
+run checkstyle
