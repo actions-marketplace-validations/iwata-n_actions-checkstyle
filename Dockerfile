@@ -5,4 +5,4 @@ ADD checkstyle_rule.xml /checkstyle_rule.xml
 ADD run.sh /run.sh
 RUN chmod +x run.sh
 
-ENTRYPOINT ["run.sh"]
+ENTRYPOINT ["/run.sh"]
