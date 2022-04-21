@@ -11,8 +11,11 @@ jobs:
         uses: actions/checkout@v3
       - name: Run
         uses: iwata-n/actions-checkstyle@main
+        with:
+          result: result.xml
+          rule: .github/workflows/test_rule.xml
       - name: Archive
         uses: actions/upload-artifact@v2
         with:
           name: result
-          path: checkstyle_result.xml
+          path: result.xml
