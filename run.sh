@@ -10,7 +10,7 @@ echo rule=$INPUT_RULE
 echo result=$INPUT_RESULT
 echo "----"
 
-java -jar $SCRIPT_PATH/checkstyle.jar -f xml -c $INPUT_RULE -o $INPUT_RESULT $INPUT_WORKDIR 
+eval "java -jar $SCRIPT_PATH/checkstyle.jar -f xml -c $INPUT_RULE -o $INPUT_RESULT $INPUT_WORKDIR"
 
 echo "----"
 cat $INPUT_RESULT
