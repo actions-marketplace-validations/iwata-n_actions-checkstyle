@@ -1,16 +1,16 @@
 #!/bin/sh
-SCRIPT_PATH=$(cd $(dirname $0); pwd)
 
 cd $GITHUB_WORKSPACE
 
 echo workspace=$GITHUB_WORKSPACE
 echo workdir=$INPUT_WORKDIR
-echo script_path=$SCRIPT_PATH
 echo rule=$INPUT_RULE
 echo result=$INPUT_RESULT
 echo "----"
+eval "ls $INPUT_WORKDIR"
+echo "----"
 
-CMD="java -jar $SCRIPT_PATH/checkstyle.jar -f xml -c $INPUT_RULE -o $INPUT_RESULT $INPUT_WORKDIR"
+CMD="java -jar /checkstyle.jar -f xml -c $INPUT_RULE -o $INPUT_RESULT $INPUT_WORKDIR"
 echo $CMD
 eval $CMD
 
