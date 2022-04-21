@@ -7,9 +7,9 @@ inputs:
   result:
     description: 'result'
     default: './checkstyle_result.xml'
-  workdir:
-    description: 'working directory'
-    default: '.'
+  filter:
+    description: 'filter'
+    default: '*.java'
 runs:
   using: 'docker'
   image: 'Dockerfile'
