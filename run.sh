@@ -9,7 +9,7 @@ echo INPUT_RULE=$INPUT_RULE
 echo INPUT_RESULT=$INPUT_RESULT
 echo "----"
 
-find $INPUT_WORKDIR -name $INPUT_FILTER | xargs java -jar /checkstyle.jar -f xml -c $INPUT_RULE -o $INPUT_RESULT
+find $INPUT_WORKDIR -name "$INPUT_FILTER" | xargs java -jar checkstyle.jar -f xml -c $INPUT_RULE -o $INPUT_RESULT
 
 echo "----"
 cat $INPUT_RESULT
