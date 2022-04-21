@@ -14,6 +14,7 @@ jobs:
         with:
           result: result.xml
           rule: .github/workflows/test_rule.xml
+          workdir:"**/*.java"
       - name: Archive
         uses: actions/upload-artifact@v2
         with:
