@@ -1,10 +1,10 @@
 name: 'Checkstyle'
 description: 'run checkstyle'
 inputs:
-  checkstyle-rule:
+  checkstyle_rule:
     description: 'rule'
     default: '/checkstyle_rule.xml'
-  checkstyle-result:
+  checkstyle_result:
     description: 'result'
     default: './checkstyle_result.xml'
 runs:
