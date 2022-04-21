@@ -7,6 +7,9 @@ inputs:
   result:
     description: 'result'
     default: './checkstyle_result.xml'
+  workdir:
+    description: 'workdir'
+    default: '.'
   filter:
     description: 'filter'
     default: '*.java'
